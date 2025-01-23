@@ -1,0 +1,296 @@
+@use "./assets/global/styles/global/global" as *;
+
+.app {
+  background: url("./assets/imgs/effectGalaxy.png"),
+    url("./assets/imgs/effectGalaxy.png"), url("./assets/imgs/effectGalaxy.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 70%;
+  background-position: -150% 50%, 180% 10%, 50% 100%;
+  background-color: var(--bg);
+  position: relative;
+  z-index: 5;
+}
+
+.hdet {
+  position: relative;
+
+  .glow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color);
+    filter: blur(70px);
+  }
+  .containerBtns {
+    margin-top: 50px;
+    button {
+      margin-right: 20px;
+    }
+  }
+}
+
+.imgCon {
+  width: 500px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .overS1,
+  .overS2 {
+    position: absolute;
+    display: block;
+    left: 18%;
+    top: 8%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color);
+    filter: blur(30px);
+  }
+
+  .s1 {
+    left: 21%;
+    top: 12%;
+    width: 50px;
+    height: 50px;
+    filter: blur(13px);
+  }
+
+  .s2 {
+    width: 20px;
+    filter: blur(7px);
+    height: 20px;
+    left: 23%;
+    top: 16%;
+  }
+
+  .s3 {
+    left: 67%;
+    top: 63%;
+  }
+  .s4 {
+    width: 20px;
+    height: 20px;
+    top: 70%;
+    left: 73%;
+    filter: blur(7px);
+  }
+  .s5 {
+    width: 50px;
+    height: 50px;
+    top: 67%;
+    left: 70%;
+    filter: blur(13px);
+  }
+}
+
+.count-s > * {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.lauchCard {
+  width: 300px;
+  height: 320px;
+  border: 1px solid var(--color);
+  background-color: var(--bg);
+
+  * {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .profileImg {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
+}
+
+.outlBtn {
+  border: 1px solid var(--color) !important;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: #00c3f42c;
+  }
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.progressBar {
+  width: 90%;
+  height: 10px;
+  background-color: white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--color);
+  }
+}
+
+.box {
+  background-color: var(--footerClr);
+  margin: 0 var(--defaultDisplayMargin);
+  padding: 20px var(--defaultDisplayMargin);
+
+  .right {
+    img {
+      width: 40%;
+    }
+  }
+}
+
+input {
+  all: unset;
+  width: 300px;
+  max-width: 100%;
+}
+.id {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: var(--white);
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+
+  svg {
+    width: 20px;
+  }
+}
+
+section {
+  width: 100%;
+}
+
+.tcx.lis {
+  display: none !important;
+}
+
+.e1 {
+  width: 300px;
+}
+
+
+footer {
+  background-color: var(--footerClr);
+  padding: 20px var(--defaultDisplayMargin);
+  max-height: 100vh;
+  overflow: auto;
+  scrollbar-width: none;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .imgCon {
+    .s4 {
+      left: 70%;
+      top: 70%;
+    }
+    .s3 {
+      left: 62%;
+      top: 60%;
+    }
+
+    .s5 {
+      left: 66%;
+      top: 65%;
+    }
+  }
+}
+@media screen and (max-width: 680px) {
+  .app {
+    background-size: 600px;
+    background-position: -300px 60%, 150px 10%, 50% calc(100% - 750px);
+  }
+  .tcx.lis {
+    display: block !important;
+    width: 400px !important;
+    max-width: 80% !important;
+    margin: auto;
+  }
+  .feature {
+    gap: 0 30px;
+    justify-content: center;
+    .lig {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .feature {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .boxContainer.xx3 {
+    display: block;
+
+    .lauchCard {
+      margin: 20px auto;
+      width: 100%;
+    }
+  }
+
+  .box.ec {
+    flex-direction: column-reverse;
+    text-align: center;
+
+    gap: 50px 0;
+
+    .right {
+      width: 400px !important;
+    }
+  }
+  .box.ecx {
+    flex-direction: column;
+    .inp {
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  footer.ex {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .primaryLogo {
+      margin: auto;
+    }
+
+    section {
+      text-align: center;
+      margin: auto;
+
+      a {
+        width: 100%;
+      }
+    }
+    div.icss {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

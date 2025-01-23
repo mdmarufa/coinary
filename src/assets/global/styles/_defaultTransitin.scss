@@ -1,0 +1,3 @@
+@mixin defaultTransition($d: 0.3s, $tf: ease, $els: all) {
+  transition: $els $d $tf;
+}

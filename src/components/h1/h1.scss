@@ -1,0 +1,5 @@
+@use "../../assets/global/styles/global/global" as *;
+
+h1.h1 {
+  @include fontStyle(var(--h1), var(--lora), var(--white), var(--bold))
+}

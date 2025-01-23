@@ -1,0 +1,28 @@
+.card3 {
+  width: 250px;
+  box-shadow: 0px 0px 3px 3px var(--color);
+  background-color: var(--bg);
+
+  .c3icon {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-color: var(--color);
+      filter: blur(12px);
+    }
+
+    svg {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}

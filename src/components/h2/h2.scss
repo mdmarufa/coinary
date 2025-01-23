@@ -1,0 +1,9 @@
+@use "../../assets/global/styles/global/global" as *;
+
+h1.h2 {
+  @include fontStyle(var(--h2), var(--outfit), var(--white));
+}
+
+h1.secHeader {
+  @include fontStyle(var(--secHeaderFs), var(--outfit), var(--white));
+}

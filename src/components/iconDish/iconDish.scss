@@ -1,0 +1,19 @@
+.iconDish {
+  width: 65px;
+  height: 65px;
+  background-color: var(--iconDishBg);
+
+  svg {
+    width: 35px;
+  }
+}
+
+.smlW {
+  width: 40px;
+  height: 40px;
+  
+  svg {
+    fill: white;
+    width: 15px;
+  }
+}

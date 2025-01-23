@@ -1,0 +1,11 @@
+@use "../../assets/global/styles/global/global" as *;
+.card1 {
+  border: 1px solid var(--borderClr);
+  background-color: var(--card1Bg);
+  width: 270px;
+  @include defaultTransition;
+
+  &:hover {
+    border-color: white;
+  }
+}

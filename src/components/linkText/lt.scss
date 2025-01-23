@@ -1,0 +1,12 @@
+@use "../../assets/global/styles/global/global" as *;
+
+.lt {
+  cursor: pointer;
+
+  @include fontStyle(var(--xml), var(--outfit), var(--white));
+  @include defaultTransition;
+}
+
+.lth:hover {
+  color: var(--color);
+}

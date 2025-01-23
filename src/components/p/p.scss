@@ -1,0 +1,18 @@
+@use "../../assets/global/styles/global/global" as *;
+
+p.p {
+  margin-block: 10px;
+  @include fontStyle(var(--ml), var(--outfit), var(--americanSilver), normal)
+}
+p.pl {
+  @include fontStyle(var(--mp), var(--outfit), var(--americanSilver), var(--semiBold))
+}
+p.ph {
+  @include fontStyle(var(--ph), var(--outfit), var(--americanSilver), normal)
+}
+p.ps {
+  @include fontStyle(var(--smallF), var(--outfit), var(--secPClr), normal)
+}
+p.sss {
+  @include fontStyle(var(--sss), var(--outfit), var(--white), 300)
+}

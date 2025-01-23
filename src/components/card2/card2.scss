@@ -1,0 +1,17 @@
+@use "../../assets/global/styles/global/global" as *;
+
+.card2Pad {
+  background: linear-gradient(var(--d),var(--color), transparent);
+  padding: 2px;
+  
+  @include defaultTransition;
+  .card2 {
+    width: 280px;
+    background-color: var(--card1Bg);
+    @include defaultTransition;
+
+    &:hover {
+      border-color: white;
+    }
+  }
+}
