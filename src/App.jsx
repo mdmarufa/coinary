@@ -590,7 +590,8 @@ function App() {
           </div>
         </div>
       </div>
-      <footer className="w-100 flex align-items-center justify-content-center gap-5 ex">
+      <div class="fx">
+          <footer className="w-100 flex align-items-center justify-content-center gap-5 ex">
         <section>
           <PrimaryLogo />
           <P
@@ -658,6 +659,7 @@ function App() {
           </a>
         </section>
       </footer>
+      </div>
     </>
   );
 }
